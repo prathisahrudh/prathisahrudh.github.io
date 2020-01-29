@@ -9,6 +9,12 @@
     color:white;
 }
 
+@media screen and (max-width:160px)
+{
+    *{
+    font-size:12px;
+    }
+}
 /*                               NAVBAR                              */
 #nav-one
 {
