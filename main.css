@@ -1,0 +1,244 @@
+:root{
+    --main-big-color:#1d1d1d;
+}
+
+*{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    color:white;
+}
+
+/*                               NAVBAR                              */
+#nav-one
+{
+    position: fixed;
+    background-color:black; /*previous font - rgba(255,255,255,0.2)*/
+    opacity: 1;
+    overflow: hidden;
+    width: 100%;
+}
+
+#nav-one ul
+{
+    background-color:transparent;
+    list-style: none;
+}
+
+#nav-one li
+{
+    padding:20px 20px;
+    display: inline-block; 
+}
+
+#nav-one li a 
+{
+    text-decoration: none;
+    padding:20px;
+    letter-spacing:3px;
+}
+.list-one
+{
+    float: left;
+}
+.list-two
+{
+    float: right;
+}
+.list-three
+{
+    float: right;
+}
+
+#nav-one a:hover
+{
+    text-decoration: underline;
+}
+
+
+/*                             BODY                                */
+
+/*                    Animation Name styling                          */
+body
+{
+    background-color: #141414;
+}
+
+#anim
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#paragraph::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: gold;
+    animation: styling 2s;
+    z-index: 1;
+    height: 100%;
+}
+
+#paragraph
+{
+    float: left;
+    color:white;
+    font-size: 2rem;
+    letter-spacing: 40px;
+}
+
+@keyframes styling
+{
+   0%
+   {
+       width: 0%;
+       left: 0%;
+   }
+   50%
+   {
+       width: 100%;
+       left: 0%;
+   }
+   100%
+   {
+       width: 0%;
+       left: 100%;
+   }
+}
+
+
+.addspace
+{
+    padding: 100px 100px;
+}
+
+/*                    Animtaion web developer text                     */
+
+#animB
+{
+    position: relative;
+}
+
+#paragraphB
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:400;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+#paragraphB::before
+{
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    animation: topp 2.5s ease-in-out;
+    background-color: red;
+}
+
+@keyframes topp
+{
+   0%
+   {
+       width: 0%;
+       left: 0%;
+   }
+   50%
+   {
+       width: 100%;
+       left: 0%;
+   }
+   100%
+   {
+       width: 0%;
+       left: 100%;
+   }
+}
+
+#intro
+{
+    height: 100%;
+}
+
+#top-content
+{
+    width: 100%;
+    height: 90vh;
+}
+
+/*                           Grids Part                          */
+
+#main-part
+{
+    background-color: #303030;
+}
+.main-part-style
+{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+#heade
+{
+    font-size: 3rem;
+    text-align:center;
+    margin: 0 auto 20px auto;
+    border-bottom: 0.2rem solid white;
+    max-width: 640px;
+}
+
+#main-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    
+}
+
+.grid-block
+{
+    width: 50%; 
+}
+
+
+/*                          Contact part                               */
+
+#bottom-text
+{
+    font-size: 5rem;
+    padding: 0.2rem ;
+}
+
+
+.bottom-info a
+{
+    display: flex;
+    float:left
+    text-align: left;
+    font-size:5rem;
+    padding:5px;
+    text-decoration:none;
+}
+
+.bottom-info a:hover
+{
+    background-color: yellow;
+    color: red;
+}
